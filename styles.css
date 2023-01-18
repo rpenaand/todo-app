@@ -1,0 +1,143 @@
+/* ---------Default styles------------- */
+:root {
+  --c-primary: rgb(23, 149, 161);
+  --c-secondary: rgb(175, 170, 49);
+  --c-tertiary: orange;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'lato', sans-serif;
+  background-image: linear-gradient(
+    120deg,
+    var(--c-primary),
+    var(--c-secondary)
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  -ms-word-break: break-word;
+  word-break: break-word;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+button,
+select {
+  font-size: 1.6rem;
+}
+
+input,
+select,
+.btn {
+  padding: 1rem;
+  outline: none;
+  border: none;
+}
+
+input {
+  border-bottom: 1px solid grey;
+}
+
+label {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+select {
+  background-color: aliceblue;
+}
+
+form {
+  background-color: aliceblue;
+  padding: 1rem 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+form > * {
+  background-color: transparent;
+}
+
+/* ---------Header styles------------- */
+header {
+  padding: 6.4rem 3.2rem 3.2rem 3.2rem;
+  color: aliceblue;
+}
+
+/* ---------Main styles------------- */
+
+.section-form {
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+  padding: 3.2rem;
+  flex-wrap: wrap;
+}
+
+.section-tasks {
+  padding: 1.6rem 3.2rem 3.2rem 3.2rem;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.task-item {
+  min-width: 30rem;
+  background-color: aliceblue;
+  padding: 0 0 0 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.task-options {
+  display: flex;
+}
+
+.btn {
+  background-color: var(--c-primary);
+  cursor: pointer;
+}
+
+.btn--delete {
+  background-color: var(--c-tertiary);
+}
+
+.margin-bottom-medium {
+  margin-bottom: 4.8rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: lightblue;
+  opacity: 0.6;
+}

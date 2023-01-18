@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="U-XA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is just a simple webpage for javascript practice"
+    />
+    <meta name="author" content="Raul Pena" />
+    <title>Practice</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <template id="single-task">
+      <li class="task-item">
+        <h3>Task name</h3>
+        <section class="task-options">
+          <button class="btn btn--complete">
+            <i class="fa-solid fa-check"></i>
+          </button>
+          <button class="btn btn--delete">
+            <i class="fa-regular fa-trash"></i>
+          </button>
+        </section>
+      </li>
+    </template>
+    <header>
+      <h1>Raul's Task List</h1>
+    </header>
+    <main class="app">
+      <section class="section-form">
+        <form>
+          <label for="task-input">Task</label>
+          <input
+            type="text"
+            placeholder="Add task..."
+            required
+            id="task-input"
+          />
+          <button class="btn"><i class="fa-solid fa-plus"></i></button>
+        </form>
+        <select>
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="incomplete">Incompleted</option>
+        </select>
+      </section>
+      <section class="section-tasks">
+        <ul class="task-list"></ul>
+      </section>
+    </main>
+  </body>
+</html>
